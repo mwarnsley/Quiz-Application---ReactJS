@@ -5,8 +5,12 @@ import Question from './Question.jsx';
 class QuestionList extends Component{
 	render(){
 		return(
-			<div>
-				
+			<div className="questions">
+				{
+					this.props.questions.map(question => {
+						return <Question question={question} key={question.id} {...this.props} />
+					})
+				}
 			</div>
 		)
 	}

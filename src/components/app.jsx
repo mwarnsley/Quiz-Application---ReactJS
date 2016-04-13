@@ -65,7 +65,7 @@ class App extends Component{
 					correct: 'a'
 				},
 				{
-					id: 1,
+					id: 4,
 					text: 'Is Javascript a scripting or compiled language?',
 					choices: [
 						{
