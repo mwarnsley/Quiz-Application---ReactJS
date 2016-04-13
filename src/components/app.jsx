@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import QuestionList from './quiz/QuestionList.jsx';
 
 class App extends Component{
 	constructor(props){
@@ -87,11 +88,11 @@ class App extends Component{
 			current: 1
 		}
 	}
-	
+
 	render(){
 		return(
 			<div>
-				APP
+				<QuestionList {...this.state}/>
 			</div>
 		)
 	}
